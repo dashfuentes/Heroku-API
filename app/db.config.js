@@ -5,9 +5,13 @@ module.exports = {
     DB: "d6bb7pipsu54at",
     dialect: "postgres",
     ssl: true,
-  dialectOptions: {
+    dialectOptions: {
     ssl: {
       rejectUnauthorized: false
     }
   }
-  };
+};
+  
+//run 
+//heroku config:set PGSSLMODE=no-verify --app dash-nodejs-mysql
+//test
